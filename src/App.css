@@ -7,19 +7,12 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 5vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -28,11 +21,78 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@import "@aws-amplify/ui-react/styles.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+:root {
+  --amplify-fonts-default-variable: "Open Sans";
+  --amplify-fonts-default-static: "Open Sans";
+  --amplify-colors-brand-primary-10: var(--amplify-colors-blue-10);
+  --amplify-colors-brand-primary-20: var(--amplify-colors-blue-20);
+  --amplify-colors-brand-primary-40: var(--amplify-colors-blue-40);
+  --amplify-colors-brand-primary-60: var(--amplify-colors-blue-60);
+  --amplify-colors-brand-primary-80: var(--amplify-colors-blue-80);
+  --amplify-colors-brand-primary-90: var(--amplify-colors-blue-90);
+  --amplify-colors-brand-primary-100: var(--amplify-colors-blue-100);
+  --amplify-colors-brand-secondary-10: var(--amplify-colors-neutral-10);
+  --amplify-colors-brand-secondary-20: var(--amplify-colors-neutral-20);
+  --amplify-colors-brand-secondary-40: var(--amplify-colors-neutral-40);
+  --amplify-colors-brand-secondary-60: var(--amplify-colors-neutral-60);
+  --amplify-colors-brand-secondary-80: var(--amplify-colors-neutral-80);
+  --amplify-colors-brand-secondary-90: var(--amplify-colors-neutral-90);
+  --amplify-colors-brand-secondary-100: var(--amplify-colors-neutral-100);
+  --amplify-colors-radii-small: 0;
+  --amplify-colors-radii-medium: 2px;
+  --amplify-colors-radii-large: 4px;
+  --amplify-colors-border-primary: var(--amplify-colors-neutral-40);
+  --amplify-colors-border-secondary: var(--amplify-colors-neutral-20);
+  --amplify-colors-border-tertiary: var(--amplify-colors-neutral-10);
+  --amplify-colors-background-secondary: var(--amplify-colors-brand-primary-10);
+  --amplify-components-tabs-item-border-color: var(--amplify-colors-neutral-60);
+
+  --amplify-radii-small: 0;
+  --amplify-radii-medium: 0;
+  --amplify-radii-large: 0;
+  --amplify-space-small: 1rem;
+  --amplify-space-medium: 1.5rem;
+  --amplify-space-large: 2rem;
+  --amplify-border-widths-small: 2px;
+  --amplify-border-widths-medium: 4px;
+  --amplify-border-widths-large: 8px;
 }
+
+body {
+  background: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.songList {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+
+.songCard {
+  display: flex;
+  justify-content: space-around;
+  margin: 5px;
+}
+
+.songName {
+  font-weight: bold;
+  text-align: center;
+  padding: 0px;
+}
+
+/* .songName {
+  font-size: 1.25em;
+  font-weight: bold;
+  width: max-content;
+  color: var(--color-text-2);
+  justify-content: space-around;
+} */
