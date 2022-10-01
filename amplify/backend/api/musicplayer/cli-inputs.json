@@ -4,8 +4,10 @@
     "apiName": "musicplayer",
     "serviceName": "AppSync",
     "defaultAuthType": {
-      "mode": "AMAZON_COGNITO_USER_POOLS",
-      "cognitoUserPoolId": "authmusicplayera05fad27"
+      "mode": "API_KEY",
+      "expirationTime": 20,
+      "apiKeyExpirationDate": "2022-10-21T13:44:00.585Z",
+      "keyDescription": ""
     },
     "conflictResolution": {},
     "additionalAuthTypes": []

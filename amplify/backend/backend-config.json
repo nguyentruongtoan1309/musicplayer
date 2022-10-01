@@ -31,21 +31,15 @@
     "musicplayer": {
       "service": "AppSync",
       "providerPlugin": "awscloudformation",
-      "dependsOn": [
-        {
-          "category": "auth",
-          "resourceName": "musicplayera05fad27",
-          "attributes": [
-            "UserPoolId"
-          ]
-        }
-      ],
+      "dependsOn": [],
       "output": {
         "authConfig": {
           "defaultAuthentication": {
-            "authenticationType": "AMAZON_COGNITO_USER_POOLS",
-            "userPoolConfig": {
-              "userPoolId": "authmusicplayera05fad27"
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 20,
+              "apiKeyExpirationDate": "2022-10-21T13:44:00.585Z",
+              "description": ""
             }
           },
           "additionalAuthenticationProviders": []

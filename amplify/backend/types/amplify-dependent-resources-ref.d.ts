@@ -12,6 +12,7 @@ export type AmplifyDependentResourcesAttributes = {
     },
     "api": {
         "musicplayer": {
+            "GraphQLAPIKeyOutput": "string",
             "GraphQLAPIIdOutput": "string",
             "GraphQLAPIEndpointOutput": "string"
         }

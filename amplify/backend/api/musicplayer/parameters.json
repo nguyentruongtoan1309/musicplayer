@@ -2,11 +2,5 @@
   "AppSyncApiName": "musicplayer",
   "DynamoDBBillingMode": "PAY_PER_REQUEST",
   "DynamoDBEnableServerSideEncryption": false,
-  "AuthCognitoUserPoolId": {
-    "Fn::GetAtt": [
-      "authmusicplayera05fad27",
-      "Outputs.UserPoolId"
-    ]
-  },
-  "AuthModeLastUpdated": "2022-09-30T23:28:47.491Z"
+  "AuthModeLastUpdated": "2022-10-01T13:44:14.979Z"
 }
